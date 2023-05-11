@@ -104,7 +104,13 @@
             }
 
             &:nth-child(4) {
-                display: none;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 900px;
+                height: 600px;
+                background: radial-gradient(238.53% 189.02% at 3.2% 3.49%, rgba(255, 246, 233, 0.1) 0%, rgba(26, 29, 35, 0.1) 26.62%, rgba(26, 29, 35, 0.1) 52.1%, rgba(26, 29, 35, 0.01) 70.17%, rgba(26, 29, 35, 0) 100%);
+                backdrop-filter: blur(7.5px);  
             }
 
             &:nth-child(5) {

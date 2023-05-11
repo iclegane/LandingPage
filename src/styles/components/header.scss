@@ -1,0 +1,29 @@
+.header {
+    position: relative;
+    font-weight: 500;
+    padding-top: 50px;
+    line-height: 20px;
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__logo {
+        margin-right: 30px;
+    }
+
+    &__phone {
+        margin-left: auto;
+        margin-right: 50px;
+    }
+
+    @media (max-width: 1140px) {
+        position: fixed;
+        padding: 20px 16px;
+        background-color: $background-color;
+
+        &__logo, &__phone, &__icons {
+            display: none;
+        }
+    }
+}

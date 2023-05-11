@@ -1,0 +1,38 @@
+.primary-info {
+    position: relative;
+    width: 365px;
+    
+    &__title {
+        font-size: 48px;
+        line-height: 58px;
+        margin: 0;
+
+        span {
+            display: block;
+            font-weight: 900;
+        }
+    }
+
+    &__description {
+        position: relative;
+        font-family: 'Montserrat';
+        width: 275px;
+        margin-top: 30px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    @media (max-width: 1140px) {
+        width: 100%;
+
+        &__title {
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 44px;
+        }   
+        
+        &__description {
+            margin-top: 15px;
+        }
+    }
+}

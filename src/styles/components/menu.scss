@@ -1,0 +1,30 @@
+.menu {
+    position: relative;
+    align-items: center;
+
+    ul {
+        display: flex;
+
+        li:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    @media (max-width: 1140px) {
+        ul {
+            li {
+                text-transform: uppercase;
+                font-size: 12px;
+                line-height: 15px;
+            }
+
+            li:not(:last-child) {
+                margin-right: 16px;
+            }
+
+            li:last-child {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.main-info {
+    position: relative;
+    padding: 100px 0;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media (max-width: 1140px) {
+        z-index: -1;
+        padding: 80px 15px 60px;
+
+        &__wrapper {
+            flex-direction: column;
+            justify-content: unset;
+        }
+    }
+}

@@ -1,0 +1,110 @@
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+
+    &__section {
+        &:nth-child(2) {
+            .footer-menu__list {
+              column-count: 2;
+            }
+        }
+
+        &:nth-child(3) {
+            text-align: end;
+            .footer-menu__list-item {
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    &__section-title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $secondary-color;
+        margin: 0 0 20px 0;
+    }
+
+    &__list-item {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__list-item .icons {
+        display: inline-flex;
+
+        &__item {
+            width: 16px;
+            height: 16px;
+
+            &:not(:last-child) {
+                margin-right: 14px;
+            }
+        }
+    }
+
+    @media (max-width: 1140px) {
+        flex-direction: column;
+
+        &__section {
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+
+            &:nth-child(2) {
+                .footer-menu__list-item {
+                    max-width: 120px;
+                }
+            }
+
+            &:nth-child(3) {
+                text-align: start;
+                .footer-menu__list-item {
+                    &:not(:last-child) {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+
+        &__section-title {
+            font-size: 12px;
+            line-height: 15px;
+        }
+
+        &__section:nth-child(2) {
+            .footer-menu__list {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-areas: 
+                "item1 item7"
+                "item2 item6"
+                "item3 item8"
+                "item4 item9"
+                "item5 item10"
+            }
+
+            @for $i from 1 through 10 {
+                .footer-menu__list-item:nth-child(#{$i}) {
+                  grid-area: item#{$i};
+                }
+            }
+        }
+
+        &__list-item {
+            line-height: 17px;
+        }
+
+        &__list-item .icons {
+            &__item {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}

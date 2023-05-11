@@ -1,0 +1,117 @@
+.gift {
+    position: relative;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+
+    &__title {
+        width: 291px;
+        margin-bottom: 40px;
+        margin-left: auto;
+        text-align: end;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    &__item {
+        text-align: end;
+    }
+
+    &__item:nth-child(1) {
+        .gift__item-description {
+            width: 90px;
+        }
+    }
+
+    &__item:nth-child(2) {
+        .gift__item-description {
+            width: 135px;
+        }
+    }
+
+    &__item:nth-child(3) {
+        .gift__item-description {
+            width: 130px;
+        }
+    }
+
+    &__item:nth-child(4) {
+        .gift__item-description {
+            width: 130px;
+        }
+    }
+
+    &__item-title {
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+
+    &__item-mobileTitle {
+        display: none;
+    }
+
+    &__item-description {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 6px;
+        margin-left: auto;
+    }
+
+    &__button {
+        display: block;
+        margin-left: auto;
+        margin-top: 60px;
+    }
+
+    @media (max-width: 1140px) {
+        margin-top: 45px;
+
+        &__title {
+            width: 275px;
+            margin-left: unset;
+            text-align: unset;
+            margin-bottom: 20px;
+        }
+
+        &__list {
+            display: inline-grid;
+            gap: 15px;
+        }
+
+        &__item {
+            text-align: unset;
+        }
+
+        &__item-title, &__item-description, &__button {
+            display: none;
+        }
+
+        &__item-mobileTitle {
+            position: relative;
+            display: block;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 16px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            padding-left: 15px;
+
+            &::after {
+                position: absolute;
+                content: "";
+                left: 0;
+                top:50%;
+                transform: translateY(-50%);
+                width: 10px;
+                height: 1px;
+                background: $background-gradient;
+            }
+        }
+    }
+}

@@ -10,7 +10,7 @@ const Landing = () => {
                         <div className="logo header__logo">
                             <img
                                 className="logo__img"
-                                src="/svg/logo.svg"
+                                src="./svg/logo.svg"
                                 alt="logo"
                             />
                             <div className="logo__description">
@@ -45,16 +45,16 @@ const Landing = () => {
                         <div className="icons header__icons">
                             <a href="#" className="icons__item">
                                 <img
-                                    src="/svg/contacts/telegram.svg"
+                                    src="./svg/contacts/telegram.svg"
                                     alt="telegram"
                                 />
                             </a>
                             <a href="#" className="icons__item">
-                                <img src="/svg/contacts/viber.svg" alt="viber" />
+                                <img src="./svg/contacts/viber.svg" alt="viber" />
                             </a>
                             <a href="#" className="icons__item">
                                 <img
-                                    src="/svg/contacts/whatsapp.svg"
+                                    src="./svg/contacts/whatsapp.svg"
                                     alt="whatsapp"
                                 />
                             </a>
@@ -191,16 +191,16 @@ const Landing = () => {
                                 <div className="icons">
                             <a href="#" className="icons__item">
                                 <img
-                                    src="/svg/contacts/telegram.svg"
+                                    src="./svg/contacts/telegram.svg"
                                     alt="telegram"
                                 />
                             </a>
                             <a href="#" className="icons__item">
-                                <img src="/svg/contacts/viber.svg" alt="viber" />
+                                <img src="./svg/contacts/viber.svg" alt="viber" />
                             </a>
                             <a href="#" className="icons__item">
                                 <img
-                                    src="/svg/contacts/whatsapp.svg"
+                                    src="./svg/contacts/whatsapp.svg"
                                     alt="whatsapp"
                                 />
                             </a>
